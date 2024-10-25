@@ -19,7 +19,7 @@ document.getElementById('buscarCurto').addEventListener('click', function() {
             console.log(data);  // Para depuração, veja o que é retornado
 
             if (data.length > 0 && data[0].path && Array.isArray(data[0].path) && data[0].length !== undefined) {
-                const pathOutput = `Caminho: ${data[0].path.join(' -> ')} (Total de elos: ${data[0].length})`;
+                const pathOutput = `Caminho: ${data[0].path.join(' -> ')} (Total de Caminhos: ${data[0].length})`;
                 document.getElementById('saida').textContent = pathOutput;
             } else {
                 throw new Error("Resposta da API não contém 'path' ou 'length'.");
