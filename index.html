@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca em Grafo de Filmes</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #resultado {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Busca de Caminhos entre Atores em Filmes</h1>
+    
+    <form id="formBusca">
+        <label for="origem">Ator/atriz de origem:</label>
+        <input type="text" id="origem" name="origem" required><br><br>
+
+        <label for="destino">Ator/atriz de destino:</label>
+        <input type="text" id="destino" name="destino" required><br><br>
+
+        <button type="button" id="buscarCurto">Buscar Caminho Mais Curto</button>
+        <button type="button" id="buscarTodos">Buscar Todos os Caminhos</button>
+    </form>
+
+    <div id="resultado">
+        <h2>Resultado:</h2>
+        <pre id="saida"></pre>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
